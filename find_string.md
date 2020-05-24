@@ -1,5 +1,6 @@
 
 ```c
+/* find_string C code */
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
