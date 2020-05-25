@@ -30,7 +30,7 @@ int main()
 }
 
 void push(element item, int *n)
-{
+{ //insert item into a max heap of current size *n
     int i = ++(*n);
     while ((i!= 1) && (item.key < heap[i / 2].key))
     {
@@ -40,21 +40,23 @@ void push(element item, int *n)
     heap[i] = item;
 }
 element pop(int* n)
-{
+{// delete element with the highest key from the heap
 	int parent, child;
 	element item, temp;
 	if(HEAP_EMPTY(*n)) {
 		fprintf(stderr, "The heap is empty\n");
 		exit(EXIT_FAILURE);
 	}
+	// save value of the element with the highest key
 	item = heap[1];
 	temp = heap[(*n)--];
 	parent = 1;
 	child = 2;
-	while (child <= *n) {
+	while (child <= *n) { // find the larger child of the current parent
 		if((child < *n) && (heap[child].key > heap[child+1].key))
 			child++;
 		if(temp.key <= heap[child].key) break;
+		// move to the next lower level
 		heap[parent] = heap[child];
 		parent = child;
 		child *= 2;
