@@ -11,7 +11,7 @@ int nfind(char* string, char* pat);
 
 int main()
 {
-	char string[MAX_STRING_SIZE] = "{ababbaababaaabaca}";
+	char string[MAX_STRING_SIZE] = "{abaabbbaababaaabaca}";
 	char pattern[MAX_PATTERN_SIZE] = "{abac}";
 
 	nfind(string, pattern);
