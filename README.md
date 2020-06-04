@@ -11,7 +11,7 @@
 |201711456|이재헌|
 |201824423|발진냠|
 
-![Uploading 하트.jpg…]()
+![하트](https://user-images.githubusercontent.com/65211547/83716603-4eaea000-a66b-11ea-935b-9fb889a3aaed.jpg)
 
 ### **Couple Matching**
  * 솔로 남녀를 위한 커플매칭 프로젝트
@@ -48,6 +48,4 @@
   1. 잘생긴 사람 2. 옷을 잘입는 사람 3. 키가 큰 사람 4. 키가 작은 사람
  
  
-
-![Team](https://user-images.githubusercontent.com/65211547/83039463-2de9b780-a079-11ea-8a5f-d658569eca4b.png)
 
