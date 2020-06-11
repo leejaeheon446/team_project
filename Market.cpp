@@ -69,7 +69,7 @@ void butter_octopus()
 {
 	int butter_octopus_n;
 
-	cout << "수량을 입력하시오 : " << endl;
+	cout << "수량을 입력하시오 : " ;
 	cin >> butter_octopus_n;
 
 	cout << endl;
@@ -82,7 +82,7 @@ void nacho()
 {
 	int nacho_n;
 
-	cout << "수량을 입력하시오 : " << endl;
+	cout << "수량을 입력하시오 : " ;
 	cin >> nacho_n;
 
 	cout << endl;
