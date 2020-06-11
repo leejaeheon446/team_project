@@ -62,7 +62,7 @@ void popcorn()
 	cout << endl;
 
 	money += 8000 * popcorn_n;
-	cout << "금액은 " << money << "원 입니다" << endl;
+	cout << "총 금액은 " << money << "원 입니다" << endl;
 }
 
 void butter_octopus()
@@ -75,7 +75,7 @@ void butter_octopus()
 	cout << endl;
 
 	money += 5000 * butter_octopus_n;
-	cout << "금액은 " << money << "원 입니다" << endl;
+	cout << "총 금액은 " << money << "원 입니다" << endl;
 }
 
 void nacho()
@@ -88,5 +88,5 @@ void nacho()
 	cout << endl;
 
 	money += 3000 * nacho_n;
-	cout << "금액은 " << money << "원 입니다" << endl;
+	cout << "총 금액은 " << money << "원 입니다" << endl;
 }
