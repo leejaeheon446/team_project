@@ -3,6 +3,8 @@
 #include<iostream>
 using namespace std;
 
+int money = 0;
+
 void select_genre();
 void comedy_list();
 void romance_list();
@@ -39,6 +41,8 @@ void comedy_list()
 		<< "1. 극한 직업		2. 가장 보통의 연애		3. 엑시트" << endl;
 	cout << "입력 : ";
 	cin >> num;
+	if (num)
+		money += 10000;
 }
 
 void romance_list()
@@ -48,6 +52,8 @@ void romance_list()
 		<< "1. 유열의 음악앨범		2. 라스트 크리스마스		3. 라이브 피트" << endl;
 	cout << "입력 : ";
 	cin >> num;
+	if (num)
+		money += 10000;
 }
 
 void fantasy_list()
@@ -57,6 +63,8 @@ void fantasy_list()
 		<< "1. 겨울 왕국2		2. 캣츠		3. 알라딘" << endl;
 	cout << "입력 : ";
 	cin >> num;
+	if (num)
+		money += 10000;
 }
 
 void thriller_list()
@@ -66,4 +74,12 @@ void thriller_list()
 		<< "1. 변신		2. 어스		3. 사바하" << endl;
 	cout << "입력 : ";
 	cin >> num;
+	if (num)
+		money += 10000;
+}
+
+int main(void)
+{
+	select_genre();
+	return 0;
 }
