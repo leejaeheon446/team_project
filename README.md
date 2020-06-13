@@ -1,8 +1,4 @@
 # <도와조>
-## **TEAM PROJECT**
-
-
-![Team](https://user-images.githubusercontent.com/65211547/83039463-2de9b780-a079-11ea-8a5f-d658569eca4b.png)
 
 ### **팀원**
 |  학번  | 이름  |
@@ -10,6 +6,9 @@
 |201918770|김제현|
 |201711456|이재헌|
 |201824423|발진냠|
+
+![Help cinema](https://user-images.githubusercontent.com/65211547/84393564-b4d08f80-ac36-11ea-9741-4553e11c5146.PNG)
+
 
 ### **Help Cinema**
  * 이름, 나이, 성별, 선호하는 영화 장르 선택 후 회원가입
