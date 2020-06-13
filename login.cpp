@@ -26,7 +26,7 @@ int main()
 int cplMainMenu(int &userPick, string &username, string &password)
 {
         cout << "-------------------------------------------\n";
-        cout << "       Couple Watching\n";
+        cout << "               help cinema\n";
         cout << "-------------------------------------------\n" << endl;
         cout << "Please select an option from the menu below: \n";
         cout << "1. Login\n";
