@@ -29,9 +29,9 @@ int cplMainMenu(int &userPick, string &username, string &password)
         cout << "               help cinema\n";
         cout << "-------------------------------------------\n" << endl;
         cout << "Please select an option from the menu below: \n";
-        cout << "1. Login\n";
-        cout << "2. Create a New Account\n";
-        cout << "3. Quit\n" << endl;
+        cout << "1. 로그인\n";
+        cout << "2. 계정 생성\n";
+        cout << "3. 종료\n" << endl;
         cout << "Please select your choice: ";
         cin >> userPick;
 
@@ -56,13 +56,13 @@ int createAccount(string &username, string &password)
 {
 
         cout << "-------------------------------------------\n";
-        cout << "             Create an Account\n";
+        cout << "                   계정 생성\n";
         cout << "-------------------------------------------\n" << endl;
-        cout << "Enter the user name of your choice: ";
+        cout << "ID 입력: ";
         cin >> username;
-        cout << "Enter a password of your choice: ";
+        cout << "password 입력: ";
         cin >> password;
-        cout << "\nINFO: Your account has been created successfully!\n";
+        cout << "\nINFO: 계정이 생성 되었습니다!\n";
         cout <<endl;
 
     return 0;
@@ -76,40 +76,40 @@ int loginMenu(int &userPick, string &username, string &password)
         string password2;
 
         cout << "-------------------------------------------\n";
-        cout << "             Log into your Account\n";
+        cout << "                계정 로그인\n";
         cout << "-------------------------------------------\n" << endl;
-        cout << "Enter your user name: ";
+        cout << "ID 입력: ";
         cin >> username2;
 
             if (username2 == username)
             {
-                cout << "\nEnter your Password: ";
+                cout << "\npassword : ";
                 cin >> password2;
 
                     if (password2 == password)
                         {
-                            cout << "\nLogin Successful!" << endl;
+                            cout << "\n로그인 성공!" << endl;
                             int userChoice = 0;
                         }
 
                     else if (password2!= password)
                         {
                             cout << "\n";
-                            cout << "ERROR: Incorrect Password!\n";
+                            cout << "ERROR: password 불일치!\n";
                             cout << "\n";
                             cplMainMenu(userPick, username, password);
                         }
 
                     else
                         {
-                            cout << "INTERNAL ERROR!";
+                            cout << "오류!";
                         }
             }
 
             else if (username2 != username)
                 {
                     cout << "\n";
-                    cout << "ERROR: Incorrect User name!\n";
+                    cout << "ERROR: ID 불일치!\n";
                     cout << "\n";
                     cplMainMenu(userPick, username, password);
                 }
@@ -138,12 +138,12 @@ int userPickVal(int &userPick, string &username, string &password)
             break;
 
         case 3:
-            cout << "\nThank you for using!\n";
+            cout << "\n이용해주셔서 감사합니다!\n";
             exit(0);
             break;
 
         default:
-            cout << "INTERNAL ERROR" << endl;
+            cout << "오류" << endl;
     }
     return 0;
 }
