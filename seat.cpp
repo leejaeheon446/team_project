@@ -29,7 +29,7 @@ int main()
     for(input=1; input<55; input=input+2)
     {
         rows='1';
-        cout<<endl<<"\t\t               Enter Row & Column: ";
+        cout<<endl<<"\t\t                       행 열 입력: ";
         cin>>row>>col;
         if (row<=0 || col<=0)
         {
@@ -42,7 +42,7 @@ int main()
         --col;
         if(arr[row][col]=="[X]")
         {
-            cout<<endl<<"\t\t             Seat Not Available"<<endl;
+            cout<<endl<<"\t\t             이미 예약된 자리 입니다."<<endl;
             goto again;
         }
         arr[input][input+1]=arr[row][col];
@@ -58,9 +58,9 @@ int main()
                cout<<arr[i][j]<<" ";
             cout<<endl;
         }
-        cout<<endl<<"\t\t                   Seat Booked!"<<endl;
-        cout<<endl<<"\t\t        Do You Want To Book Another Seat?"<<endl;
-        cout<<"\t\t          Press [Y] For Yes & [N] For No."<<endl;
+        cout<<endl<<"\t\t                       좌석 예약"<<endl;
+        cout<<endl<<"\t\t                       추가로 예매 하시겠습니까?"<<endl;
+        cout<<"\t\t                             [Y] or [N]."<<endl;
         cout<<"\t\t                        ";
 
         cin>>c;
