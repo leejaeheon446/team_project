@@ -7,7 +7,7 @@
 |201711456|이재헌|
 |201824423|발진냠|
 
-![Help cinema](https://user-images.githubusercontent.com/65211547/84393564-b4d08f80-ac36-11ea-9741-4553e11c5146.PNG)
+![Help cgv](https://user-images.githubusercontent.com/65211547/86248205-8536f680-bbe8-11ea-97df-08b5a496c0fb.PNG)
 
 ### 영화 예매 시스템
 ### **my cgv**
@@ -19,7 +19,14 @@
 
  #### 영화 조회
  * 영화 정보 (제목, 줄거리 등) 출력
+ 
  #### 영화 예매
  * 시간, 좌석 선택
+ 
+ #### 음식 주문
+ * 팝콘
+ * 오징어
+ * 나쵸
+ 
  #### 예매 확인
  * 예매 정보와 가격표 출력
