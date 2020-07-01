@@ -20,21 +20,92 @@ void show_menu()
     cout << "               ┃                        ┃" << endl;
     cout << "               ┗━━━━━━━━━━━━━━━━━━━━━━━━┛" << endl;
 
+
     int num;
-    cout << endl << endl << endl;
+    cout << endl << endl;
+    cout << "                         원하시는 메뉴를 선택하세요 : " << endl;
+    cout << endl;
     cout << "\t\t\t1.		영화 조회\n";
-    cout << "\t\t\t2.		예매 확인\n";
-    cout << "\t\t\t3.		계산 내역	☞  ";
+    cout << "\t\t\t2.              음식 주문\n";
+    cout << "\t\t\t3.		예매 확인\n";
+    cout << "\t\t\t4.		계산 내역\n ☞  ";
     cin >> num;
+
+    cout << endl;
 
     switch (num) {
     case 1:
         check_movie();
         break;
-    case 2:
+    case 3:
         check_r();
         break;
+    case 2:
+        menu();
     }
+}
+
+void menu()
+{
+        int num;
+        char answer;
+
+        do {
+            cout << "음식 번호 입력 : ";
+            cin >> num;
+            cout << endl;
+
+            if (num == 1)
+                popcorn();
+            else if (num == 2)
+                butter_octopus();
+            else if (num == 3)
+                nacho();
+
+            cout << endl;
+            cout << "음식을 더 주문하시겠습니까? (Y/N) : " << endl;
+            cin >> answer;
+        } while (answer == 'y' || answer == 'Y');
+
+
+}
+
+void popcorn()
+{
+    int popcorn_n;
+
+    cout << "수량을 입력하시오 : ";
+    cin >> popcorn_n;
+
+    cout << endl;
+
+    total_money += 8000 * popcorn_n;
+
+}
+
+void butter_octopus()
+{
+    int butter_octopus_n;
+
+    cout << "수량을 입력하시오 : ";
+    cin >> butter_octopus_n;
+
+    cout << endl;
+
+    total_money += 5000 * butter_octopus_n;
+}
+
+void nacho()
+{
+    int nacho_n;
+
+    cout << "수량을 입력하시오 : ";
+    cin >> nacho_n;
+
+    cout << endl;
+
+    total_money += 3000 * nacho_n;
+
 }
 
 //영화 정보를 출력
