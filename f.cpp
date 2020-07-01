@@ -1,3 +1,4 @@
+```cpp
 #include "f.h"
 
 string password = "12345"; // 예약취소할 때 필요한 비밀번호
@@ -312,6 +313,10 @@ void cancel_r()
             a.set_time("\0");
             total_money = 0;
             people_number = 0;
+            for (int i = 0; i < 5; i++) //간식을 저장하는 배열을 비움.
+            {
+                snack[i] = 0;
+            }
             cout << "\n\t\t\t예약이 취소 되었습니다.";
             Sleep(1500);
             show_menu();
@@ -328,9 +333,11 @@ void cancel_r()
 
 void print_snack()
 {
-    int i;
+    int i = 0;
+    if (snack[i] == 0)
+        cout << "없음.";
     for (i = 0; i < 5; i++)
-    {
+    {        
         if (snack[i] == 1)
             cout << "팝콘 추가" << endl;
         else if (snack[i] == 2)
