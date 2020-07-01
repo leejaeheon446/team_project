@@ -1,4 +1,3 @@
-```cpp
 #include "f.h"
 
 int total_money = 0; // 총 금액
@@ -11,49 +10,59 @@ namespace test {
 
 void show_menu()
 {
-	int num;
-	cout << endl << endl << endl;
-	cout << "\t\t\t1.		영화 조회\n";
-	cout << "\t\t\t2.		예매 확인\n";
-	cout << "\t\t\t3.		계산 내역	☞  ";
-	cin >> num;
+    cout << endl << endl << endl;
+    cout << "               ┏━━━━━━ Help Cinema━━━━━━┓" << endl;
+    cout << "               ┃                        ┃" << endl;
+    cout << "               ┃ 1. 팝콘     :  8000원  ┃" << endl;
+    cout << "               ┃ 2. 오징어   :  5000원  ┃" << endl;
+    cout << "               ┃ 3. 나쵸     :  3000원  ┃" << endl;
+    cout << "               ┃ 4. 종료                ┃" << endl;
+    cout << "               ┃                        ┃" << endl;
+    cout << "               ┗━━━━━━━━━━━━━━━━━━━━━━━━┛" << endl;
 
-	switch (num) {
-	case 1:
-		check_movie();
+    int num;
+    cout << endl << endl << endl;
+    cout << "\t\t\t1.		영화 조회\n";
+    cout << "\t\t\t2.		예매 확인\n";
+    cout << "\t\t\t3.		계산 내역	☞  ";
+    cin >> num;
+
+    switch (num) {
+    case 1:
+        check_movie();
         break;
     case 2:
         check_r();
         break;
-	}
+    }
 }
 
 //영화 정보를 출력
 void check_movie()
 {
-	int num;
+    int num;
 choose:
-	system("cls");
-	cout << endl << endl << endl;
-	cout << "\t\t\t1.		 #살아있다\n";
-	cout << "\t\t\t2.		   결백\n";
+    system("cls");
+    cout << endl << endl << endl;
+    cout << "\t\t\t1.		 #살아있다\n";
+    cout << "\t\t\t2.		   결백\n";
     cout << "\t\t\t3.		 다크나이트    ☞ ";
-	cin >> num;
+    cin >> num;
     int order;
-	switch (num) {
-	case 1:
-		system("cls");
-		
-		cout << endl << endl << endl;
-		cout << "\t\t\t#살아있다." << endl << endl
-			<< "\t\t\t<감독>" << endl << "\t\t\t조일형" << endl
-			<< "\t\t\t<출연배우>" << endl << "\t\t\t유아인, 박신혜" << endl << endl
-			<< "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
-			<< "\t\t\t 혼자 고립된 '준우'(유아인)는 아무도 없는 집에 혼자 고립되었다." << endl
-			<< "\t\t\t 또다른 생존자 '유빈'(박신혜)이 아직 살아 있음을 알게되고" << endl
-			<< "\t\t\t 함께 살아남기 위한 방법을 찾아나선다.\"" << endl << endl;
-		cout << "\t\t\t1. 예매 하기\n" << "\t\t\t2. 뒤로		☞ ";
-		cin >> order;
+    switch (num) {
+    case 1:
+        system("cls");
+
+        cout << endl << endl << endl;
+        cout << "\t\t\t#살아있다." << endl << endl
+            << "\t\t\t<감독>" << endl << "\t\t\t조일형" << endl
+            << "\t\t\t<출연배우>" << endl << "\t\t\t유아인, 박신혜" << endl << endl
+            << "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
+            << "\t\t\t 혼자 고립된 '준우'(유아인)는 아무도 없는 집에 혼자 고립되었다." << endl
+            << "\t\t\t 또다른 생존자 '유빈'(박신혜)이 아직 살아 있음을 알게되고" << endl
+            << "\t\t\t 함께 살아남기 위한 방법을 찾아나선다.\"" << endl << endl;
+        cout << "\t\t\t1. 예매 하기\n" << "\t\t\t2. 뒤로		☞ ";
+        cin >> order;
         if (order == 1) {
             test::p->set_movie("#살아있다");
             time();
@@ -102,27 +111,27 @@ choose:
     case 4:
         system("cls");
         show_menu();
-	}
+    }
 }
 
 void time()
 {
-	int num;
-	cout << endl << endl << endl
-		<< "\t\t\t시간 선택" << endl << endl
-		<< "\t\t\t1. <09:00>		2. <11:00>		3. <13:00>"
-		<< endl << endl << "\t\t\t☞ ";
-	cin >> num;
-	if (num == 1)
-		test::p->set_time("09:00");
-	else if (num == 2)
-		test::p->set_time("11:00");
-	else if (num == 3)
-		test::p->set_time("13:00");
-	else
-		cout << "\t\t\t☞ ";
+    int num;
+    cout << endl << endl << endl
+        << "\t\t\t시간 선택" << endl << endl
+        << "\t\t\t1. <09:00>		2. <11:00>		3. <13:00>"
+        << endl << endl << "\t\t\t☞ ";
+    cin >> num;
+    if (num == 1)
+        test::p->set_time("09:00");
+    else if (num == 2)
+        test::p->set_time("11:00");
+    else if (num == 3)
+        test::p->set_time("13:00");
+    else
+        cout << "\t\t\t☞ ";
 
-	seat();
+    seat();
 }
 
 void seat()
