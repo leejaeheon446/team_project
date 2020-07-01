@@ -15,28 +15,25 @@ public:
 	{
 		this->time = time;
 	}
-	void set_seat(string seat)
-	{
-		this->seat = seat;
-	}
+
 	string get_title() {
 		return title;
 	}
 	string get_time() {
 		return time;
 	}
-	string get_seat() {
-		return seat;
-	}
+
 private:
 	string title;
 	string time;
-	string seat;
 };
 
 void first_screen(); // 실행 시 첫 화면
-void show_menu(); // 메뉴
+void show_menu(); // 메뉴 선택창
 void check_movie(); // 영화 조회
-void check_r(); // 예매 확인 , 가격표 출력
-void time(); // 영화 시간
-void seat(); // 좌석선택
+void snack_menu();
+void check_r(); // 예약 확인
+void time(); // 영화 시간 선택 
+void seat(); // 좌석 선택
+void cancel_r(); // 예약 취소
+void print_snack(); //주문한 간식거리 출력
