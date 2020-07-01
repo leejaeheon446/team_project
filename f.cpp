@@ -310,6 +310,8 @@ void cancel_r()
         if (_password == password) {
             a.set_movie("\0");
             a.set_time("\0");
+            total_money = 0;
+            people_number = 0;
             cout << "\n\t\t\t예약이 취소 되었습니다.";
             Sleep(1500);
             show_menu();
