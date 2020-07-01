@@ -10,7 +10,7 @@
 ![Help cinema](https://user-images.githubusercontent.com/65211547/84393564-b4d08f80-ac36-11ea-9741-4553e11c5146.PNG)
 
 ### 영화 예매 시스템
-### **my cgv**
+### **HELP CGV**
  * 영화 조회
   
  * 영화 예매
