@@ -10,16 +10,16 @@ my_reservation* p = &a;
 void show_menu()
 {
     system("cls");
-	int num;
-	cout << endl << endl << endl;
-	cout << "\t\t\t1.		영화 조회\n";
-	cout << "\t\t\t2.		예매 확인\n";
-	cout << "\t\t\t3.		예약 취소	☞  ";
-	cin >> num;
+    int num;
+    cout << endl << endl << endl;
+    cout << "\t\t\t1.		영화 조회\n";
+    cout << "\t\t\t2.		예매 확인\n";
+    cout << "\t\t\t3.		예약 취소	☞  ";
+    cin >> num;
 
-	switch (num) {
-	case 1:
-		check_movie();
+    switch (num) {
+    case 1:
+        check_movie();
         break;
     case 2:
         check_r();
@@ -27,35 +27,35 @@ void show_menu()
     case 3:
         cancel_r();
         break;
-	}
+    }
 }
 
 //영화 정보를 출력
 void check_movie()
 {
-	int num;
+    int num;
 choose:
-	system("cls");
-	cout << endl << endl << endl;
-	cout << "\t\t\t1.		 #살아있다\n";
-	cout << "\t\t\t2.		   결백\n";
+    system("cls");
+    cout << endl << endl << endl;
+    cout << "\t\t\t1.		 #살아있다\n";
+    cout << "\t\t\t2.		   결백\n";
     cout << "\t\t\t3.		 다크나이트    ☞ ";
-	cin >> num;
+    cin >> num;
     int order;
-	switch (num) {
-	case 1:
-		system("cls");
-		
-		cout << endl << endl << endl;
-		cout << "\t\t\t#살아있다." << endl << endl
-			<< "\t\t\t<감독>" << endl << "\t\t\t조일형" << endl
-			<< "\t\t\t<출연배우>" << endl << "\t\t\t유아인, 박신혜" << endl << endl
-			<< "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
-			<< "\t\t\t 혼자 고립된 '준우'(유아인)는 아무도 없는 집에 혼자 고립되었다." << endl
-			<< "\t\t\t 또다른 생존자 '유빈'(박신혜)이 아직 살아 있음을 알게되고" << endl
-			<< "\t\t\t 함께 살아남기 위한 방법을 찾아나선다.\"" << endl << endl;
-		cout << "\t\t\t1. 예매 하기\n" << "\t\t\t2. 뒤로		☞ ";
-		cin >> order;
+    switch (num) {
+    case 1:
+        system("cls");
+
+        cout << endl << endl << endl;
+        cout << "\t\t\t#살아있다." << endl << endl
+            << "\t\t\t<감독>" << endl << "\t\t\t조일형" << endl
+            << "\t\t\t<출연배우>" << endl << "\t\t\t유아인, 박신혜" << endl << endl
+            << "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
+            << "\t\t\t 혼자 고립된 '준우'(유아인)는 아무도 없는 집에 혼자 고립되었다." << endl
+            << "\t\t\t 또다른 생존자 '유빈'(박신혜)이 아직 살아 있음을 알게되고" << endl
+            << "\t\t\t 함께 살아남기 위한 방법을 찾아나선다.\"" << endl << endl;
+        cout << "\t\t\t1. 예매 하기\n" << "\t\t\t2. 뒤로		☞ ";
+        cin >> order;
         if (order == 1) {
             p->set_movie("#살아있다");
             time();
@@ -104,27 +104,27 @@ choose:
     case 4:
         system("cls");
         show_menu();
-	}
+    }
 }
 
 void time()
 {
-	int num;
-	cout << endl << endl << endl
-		<< "\t\t\t시간 선택" << endl << endl
-		<< "\t\t\t1. <09:00>		2. <11:00>		3. <13:00>"
-		<< endl << endl << "\t\t\t☞ ";
-	cin >> num;
-	if (num == 1)
-		p->set_time("09:00");
-	else if (num == 2)
-		p->set_time("11:00");
-	else if (num == 3)
-		p->set_time("13:00");
-	else
-		cout << "\t\t\t☞ ";
+    int num;
+    cout << endl << endl << endl
+        << "\t\t\t시간 선택" << endl << endl
+        << "\t\t\t1. <09:00>		2. <11:00>		3. <13:00>"
+        << endl << endl << "\t\t\t☞ ";
+    cin >> num;
+    if (num == 1)
+        p->set_time("09:00");
+    else if (num == 2)
+        p->set_time("11:00");
+    else if (num == 3)
+        p->set_time("13:00");
+    else
+        cout << "\t\t\t☞ ";
 
-	seat();
+    seat();
 }
 
 void seat()
@@ -207,7 +207,7 @@ again:
     Sleep(2000);
     system("cls");
     snack_menu();
-   
+
 }
 int snack[5] = {}; // 주문한 snack의 정보를 저장하는 배열 최대 5개까지 주문가능
 void snack_menu()
@@ -223,7 +223,7 @@ void snack_menu()
     cout << "\t\t\t               ┃ 4. 종료                ┃" << endl;
     cout << "\t\t\t               ┃                        ┃" << endl;
     cout << "\t\t\t               ┗━━━━━━━━━━━━━━━━━━━━━━━━┛" << endl << endl;
-    
+
 choose:
     cout << "\t\t\t\t\t주문번호 입력 ☞ ";
     cin >> num;
@@ -251,7 +251,7 @@ choose:
         break;
     }
     cout << "\n\t\t\t추가로 주문 하시겠습니까? [Y] or [N]"
-         << "\n\t\t\t☞ ";
+        << "\n\t\t\t☞ ";
     cin >> c;
     if (c == 'y' || c == 'Y')
         goto choose;
@@ -274,13 +274,13 @@ void check_r()
             << "\t\t\t " << "시간 : " << a.get_time() << endl << endl
             << "\t\t\t " << "인원 : " << people_number << " 명" << endl << endl
             << "\t\t\t " << "간식 : "; print_snack();
-        cout<< endl
+        cout << endl
             << "\t\t\t " << "가격 : " << total_money << " 원" << endl << endl;
         cout << "\n\t\t\t 1. 뒤로  ☞ ";
         cin >> num;
         if (num)
             show_menu();
-            
+
     }
 }
 
@@ -296,7 +296,7 @@ void cancel_r()
         show_menu();
     }
     else {
-        cout << "\t\t\t " << "제목 : " <<a.get_title() << endl << endl
+        cout << "\t\t\t " << "제목 : " << a.get_title() << endl << endl
             << "\t\t\t " << "시간 : " << a.get_time() << endl << endl
             << "\t\t\t " << "인원 : " << people_number << " 명" << endl << endl
             << "\t\t\t " << "가격 : " << total_money << " 원" << endl << endl;
@@ -305,7 +305,7 @@ void cancel_r()
     cin >> c;
     if (c == 'y' || c == 'Y')
     {
-        cout << "\n\t\t\t사용자 인증 비밀번호를 입력해주세요 ";
+        cout << "\n\t\t\tHElP CGV 관리자 인증 비밀번호를 입력해주세요 ";
         cin >> _password;
         if (_password == password) {
             a.set_movie("\0");
@@ -320,7 +320,7 @@ void cancel_r()
             cout << "비밀번호가 틀렸습니다.";
             Sleep(1500);
             show_menu();
-        }      
+        }
     }
     else if (c == 'n' || c == 'N')
         show_menu();
