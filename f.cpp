@@ -38,7 +38,7 @@ void check_movie()
 choose:
     system("cls");
     cout << endl << endl << endl;
-    cout << "\t\t\t1.		 #살아있다\n";
+    cout << "\t\t\t1.		 살아있다\n";
     cout << "\t\t\t2.		   결백\n";
     cout << "\t\t\t3.		 다크나이트    ☞ ";
     cin >> num;
@@ -48,17 +48,19 @@ choose:
         system("cls");
 
         cout << endl << endl << endl;
-        cout << "\t\t\t#살아있다." << endl << endl
-            << "\t\t\t<감독>" << endl << "\t\t\t조일형" << endl
-            << "\t\t\t<출연배우>" << endl << "\t\t\t유아인, 박신혜" << endl << endl
-            << "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
+        cout << "\t\t\t\t        < 주요 정보 >" << endl << endl;
+        cout << "\t\t\t제목 : 살아있다." << endl << endl
+            << "\t\t\t<감독>" << endl << endl << "\t\t\t조일형" << endl << endl
+            << "\t\t\t<출연배우>" << endl << endl << "\t\t\t유아인, 박신혜" << endl << endl;
+        cout << "\t\t\t<줄거리>" << endl << endl;
+        cout << "\t\t\t\"원인불명 증세의 사람들의 공격에 통제 불능에 빠진도시에" << endl
             << "\t\t\t 혼자 고립된 '준우'(유아인)는 아무도 없는 집에 혼자 고립되었다." << endl
             << "\t\t\t 또다른 생존자 '유빈'(박신혜)이 아직 살아 있음을 알게되고" << endl
             << "\t\t\t 함께 살아남기 위한 방법을 찾아나선다.\"" << endl << endl;
         cout << "\t\t\t1. 예매 하기\n" << "\t\t\t2. 뒤로		☞ ";
         cin >> order;
         if (order == 1) {
-            p->set_movie("#살아있다");
+            p->set_movie("살아있다");
             time();
             break;
         }
@@ -67,10 +69,13 @@ choose:
     case 2:
         system("cls");
         cout << endl << endl << endl;
-        cout << "\t\t\t결백" << endl << endl
-            << "\t\t\t<감독>" << endl << "\t\t\t박상현" << endl
-            << "\t\t\t<출연배우>" << endl << "\t\t\t신혜선, 배종옥" << endl << endl
-            << "\t\t\t\"아빠의 장례식장에서 벌어진 막걸리 농약 살인사건" << endl
+        cout << "\t\t\t\t        < 주요 정보 >" << endl << endl;
+        cout << "\t\t\t제목 : 결백" << endl << endl
+            << "\t\t\t<감독>" << endl << endl << "\t\t\t박상현" << endl << endl
+            << "\t\t\t<출연배우>" << endl << endl << "\t\t\t신혜선, 배종옥" << endl << endl;
+        cout << "\t\t\t<줄거리>" << endl << endl;
+
+        cout<< "\t\t\t\"아빠의 장례식장에서 벌어진 막걸리 농약 살인사건" << endl
             << "\t\t\t 살인사건의 용의자로 몰린 엄마 '채화자'의 결백을 밝히려는" << endl
             << "\t\t\t 변호사 '안정인', 마을사람들이 은폐하려 한 추악한 진실을" << endl
             << "\t\t\t 마주하게 되는 무죄 입증 추적극.\"" << endl << endl;
@@ -86,10 +91,12 @@ choose:
     case 3:
         system("cls");
         cout << endl << endl << endl;
-        cout << "\t\t\t다크나이트" << endl << endl
-            << "\t\t\t<감독>" << endl << "\t\t\t크리스토퍼 놀란" << endl
-            << "\t\t\t<출연배우>" << endl << "\t\t\t크리스찬 베일, 게리 올드만" << endl << endl
-            << "\t\t\t\"범죄와 부정부패를 제거하고 고담시를 지키려는 베트맨" << endl
+        cout << "\t\t\t\t        < 주요 정보 >" << endl << endl;
+        cout << "\t\t\t제목 : 다크나이트" << endl << endl
+            << "\t\t\t<감독>" << endl << endl << "\t\t\t크리스토퍼 놀란" << endl << endl
+            << "\t\t\t<출연배우>" << endl << endl << "\t\t\t크리스찬 베일, 게리 올드만" << endl << endl;
+        cout << "\t\t\t<줄거리>" << endl << endl;
+        cout << "\t\t\t\"범죄와 부정부패를 제거하고 고담시를 지키려는 베트맨" << endl
             << "\t\t\t 그는 짐 고든 형사와 고담시 지방검사 하비 덴트와 함께" << endl
             << "\t\t\t 도시를 범죄 조직으로부터 구원하고자 한다.\"" << endl
             << endl << endl;
@@ -216,6 +223,7 @@ void snack_menu()
     int num, i = 0;
     char c;
     cout << endl << endl << endl;
+    cout << "\t\t\t\t        간식을 주문하시겠습니까?" << endl << endl;
     cout << "\t\t\t               ┏━━━━━━ Help Cinema━━━━━━┓" << endl;
     cout << "\t\t\t               ┃                        ┃" << endl;
     cout << "\t\t\t               ┃ 1. 팝콘     :  8000원  ┃" << endl;
