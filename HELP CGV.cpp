@@ -1,5 +1,5 @@
 ```cpp
-#include "f.h"
+#include "HELP CGV.h"
 
 string password = "12345"; // 예약취소할 때 필요한 비밀번호
 int total_money = 0; // 총 금액
@@ -13,8 +13,8 @@ void show_menu()
     system("cls");
     int num;
     cout << endl << endl << endl;
-    cout << "\t\t\t1.		영화 조회\n";
-    cout << "\t\t\t2.		예매 확인\n";
+    cout << "\t\t\t1.		영화 조회\n\n";
+    cout << "\t\t\t2.		예매 확인\n\n";
     cout << "\t\t\t3.		예약 취소	☞  ";
     cin >> num;
 
@@ -38,11 +38,12 @@ void check_movie()
 choose:
     system("cls");
     cout << endl << endl << endl;
-    cout << "\t\t\t1.		 살아있다\n";
-    cout << "\t\t\t2.		   결백\n";
+    cout << "\t\t\t1.		 살아있다\n\n";
+    cout << "\t\t\t2.		   결백\n\n";
     cout << "\t\t\t3.		 다크나이트    ☞ ";
     cin >> num;
     int order;
+
     switch (num) {
     case 1:
         system("cls");
@@ -75,7 +76,7 @@ choose:
             << "\t\t\t<출연배우>" << endl << endl << "\t\t\t신혜선, 배종옥" << endl << endl;
         cout << "\t\t\t<줄거리>" << endl << endl;
 
-        cout<< "\t\t\t\"아빠의 장례식장에서 벌어진 막걸리 농약 살인사건" << endl
+        cout << "\t\t\t\"아빠의 장례식장에서 벌어진 막걸리 농약 살인사건" << endl
             << "\t\t\t 살인사건의 용의자로 몰린 엄마 '채화자'의 결백을 밝히려는" << endl
             << "\t\t\t 변호사 '안정인', 마을사람들이 은폐하려 한 추악한 진실을" << endl
             << "\t\t\t 마주하게 되는 무죄 입증 추적극.\"" << endl << endl;
@@ -177,19 +178,23 @@ again:
             system("cls");
             goto choose;
         }
+
         --row;
         --col;
+
         if (arr[row][col] == "[X]")
         {
             cout << endl << "\t\t             이미 예약된 자리 입니다." << endl;
             goto again;
         }
-        //arr[input][input + 1] = arr[row][col];
+
         arr[row][col] = "[X]";
         people_number++;
         total_money += 10000;
         system("cls");
+
         cout << endl << endl << endl;
+
         cout << "\t\t\t            1   2   3   4   5   6   7   8   9" << endl;
         for (int i = 0; i < 6; ++i)
         {
@@ -217,7 +222,9 @@ again:
     snack_menu();
 
 }
+
 int snack[5] = {}; // 주문한 snack의 정보를 저장하는 배열 최대 5개까지 주문가능
+
 void snack_menu()
 {
     int num, i = 0;
@@ -345,7 +352,7 @@ void print_snack()
     if (snack[i] == 0)
         cout << "없음.";
     for (i = 0; i < 5; i++)
-    {        
+    {
         if (snack[i] == 1)
             cout << "팝콘 추가" << endl;
         else if (snack[i] == 2)
