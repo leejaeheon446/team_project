@@ -1,7 +1,9 @@
+```cpp
+
 #include<iostream>
-#include<Windows.h>
+#include<Windows.h> // system(cls)
 #include<string>
-#include<stdlib.h>
+#include<stdlib.h> // exit()
 
 using namespace std;
 
