@@ -13,6 +13,7 @@ void show_menu()
     system("cls");
     int num;
     cout << endl << endl << endl;
+    cout << "\t\t          --------------메뉴 선택--------------\n\n\n";
     cout << "\t\t\t1.		영화 조회\n\n";
     cout << "\t\t\t2.		예매 확인\n\n";
     cout << "\t\t\t3.		예약 취소	☞  ";
@@ -38,6 +39,7 @@ void check_movie()
 choose:
     system("cls");
     cout << endl << endl << endl;
+    cout << "\t\t          --------------영화 목록--------------\n\n\n";
     cout << "\t\t\t1.		 살아있다\n\n";
     cout << "\t\t\t2.		   결백\n\n";
     cout << "\t\t\t3.		 다크나이트    ☞ ";
